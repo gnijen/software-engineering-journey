@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description"
+        content="This is the page that has my contact information and from where you can contact me">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="/Portfolio/img/icon.png" type="image/x-icon">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="/Portfolio/index.html">Home</a>
+            <a href="/Portfolio/Aboutme.html">About Me</a>
+            <a href="/Portfolio/ProfessionalExperiences.html">Professional Background</a>
+            <a href="/Portfolio/Educationalbackground.html">Educational Background</a>
+            <a href="/portfolio/Contactme.html">Contact Me</a>
+        </nav>
+    </header>
+    <main>
+        <div>
+            <h1>If you wish to contact me for any reason, contact information are:</h1>
+            <address>
+                <p>Address:</p>9559 Blake ln, Fairfax, 22031, VA
+            </address>
+
+            <p>Call me on:</p> <tel><a href="tel:+5714947350">5714947350</a></tel>
+            
+            <p>And if you wish to email me, do so on <mail><a href="mailto:gnijendra@gmail.com">gnijendra@gmail.com</a></mail>
+            </p>
+        </div>
+        <hr>
+        <div>
+            <h2>Send me a message</h2>
+            <form action="https://httpbin.org/get" method ="get">
+                <fieldset>
+                    <legend>Shoot me a text at</legend>
+                <p>
+                    <label for ="name">Name</label>
+                    <input type ="text" name="name" id="name" placeholder="Enter your name" required>
+                </p>
+                <p>
+                    <label for="address">Address</label>
+                    <input type="text" name="address" id="address" placeholder="Enter your address here">
+                </p>
+                <p>
+                    <label for="number">Phone Number</label>
+                    <input type="tel" name="number" id="number" placeholder="Please Enter Your Number">
+                </p>
+                <p>
+                    <label for="date">Date</label>
+                    <input type="datetime" name="date" id="date">
+                </p>
+                <p>
+                    <label for="who">Please select who you are?</label>
+                    <input type="radio" id="recruiter" name="recruiter" value="Recruiter">
+                    <label for="recruiter">Recruiter</label>
+                    <input type="radio" id="educator" value="Educator" name="educator">
+                    <label for="educator">Educator</label>
+                    <input type="radio" id="others" name="others" value="others">
+                    <label for="others">Others</label> 
+                </p>
+                <p>
+                    <label for="concern">Your Concern</label>
+                    <br>
+                    <textarea name="concern" id="concern"
+                    col="100" rows="10"  placeholder="Type your concern here"></textarea>
+                </p>
+                <p><input type="checkbox" id="terms" name="terms" value="terms" required>
+                    <label for="terms">I accept the terms and conditions here</label>
+                </p>
+                </fieldset>
+                <button type="submit">Send</button>
+                <button type="reset">Reset</button>
+            </form>
+        </div>
+
+    </main>
+    <hr>
+    <footer>
+        All Rights Reserved &copy;NJG
+    </footer>
+</body>
+
+</html>
